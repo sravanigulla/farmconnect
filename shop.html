@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmConnect - Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(to right, #d32f2f, #ff5722);
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .category-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .category-card h3 {
+            color: #673ab7;
+            margin-top: 15px;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #673ab7;
+            color: white;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>FarmConnect Shop</h1>
+        <p>Fresh Produce and Essentials for Your Home</p>
+    </div>
+
+    <!-- Category Section -->
+    <div class="categories">
+        <!-- Fruits Category -->
+        <div class="category-card" onclick="window.location.href='fruits.html'">
+            <img src="/home/vit-49/Downloads/AdobeStock_65706597_Preview.jpeg" alt="Fruits">
+            <h3>Fruits</h3>
+        </div>
+
+        <!-- Vegetables Category -->
+        <div class="category-card" onclick="window.location.href='vegetables.html'">
+            <img src="/home/vit-49/Downloads/download.jpeg" alt="Vegetables">
+            <h3>Vegetables</h3>
+        </div>
+
+        <!-- Pulses Category -->
+        <div class="category-card" onclick="window.location.href='pulses.html'">
+            <img src="/home/vit-49/Downloads/download (1).jpeg" alt="Pulses">
+            <h3>Pulses</h3>
+        </div>
+
+        <!-- Grains Category -->
+        <div class="category-card" onclick="window.location.href='grains.html'">
+            <img src="/home/vit-49/Downloads/grains.jpg" alt="Grains">
+            <h3>Grains</h3>
+        </div>
+
+        <!-- Eggs Category -->
+        <div class="category-card" onclick="window.location.href='eggs.html'">
+            <img src="/home/vit-49/Downloads/eggs.webp" alt="Eggs">
+            <h3>Eggs</h3>
+        </div>
+
+        <!-- Milk Category -->
+        <div class="category-card" onclick="window.location.href='milk.html'">
+            <img src="/home/vit-49/Downloads/milk.webp" alt="Milk">
+            <h3>Milk</h3>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FarmConnect</p>
+        <p>Powered by Webpros Solutions Pvt Ltd</p>
+    </div>
+
+</body>
+</html>
